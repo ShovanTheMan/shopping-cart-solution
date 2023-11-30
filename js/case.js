@@ -26,22 +26,7 @@ function updateCaseTotalPrice(newCaseNumber){
     caseTotalElement.innerText = caseTotalPrice;
 }
 
-function getTextElementValueById(elementId){
-    const caseTotalElement = document.getElementById(elementId);
-    const currentCaseTotalString = caseTotalElement.innerText;
-    const currentCaseTotal = parseInt(currentCaseTotalString);
-    return currentCaseTotal;
 
-}
-
-function calculateSubTotal(){
-    const currentCaseTotal = document.getElementById('case-total');
-    const currentPhoneTotal = document.getElementById('phone-total-price');
-    const currentSubTotal = currentCaseTotal + currentPhoneTotal;
-    const subTotalElement = document.getElementById('sub-total');
-    subTotalElement.innerText = currentSubTotal;
-
-}
 
 
 document.getElementById('btn-case-plus').addEventListener('click', function(){
